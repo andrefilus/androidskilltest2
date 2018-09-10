@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
@@ -316,6 +317,7 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnHo
             if (topFragment instanceof HomeFragment)
                 ((HomeFragment) topFragment).reloadUsers();
             dialog.dismiss();
+            Snackbar.make(mActivityBinding.getRoot(), R.string.s_updates_success, Snackbar.LENGTH_INDEFINITE).setDuration(2000).show();
         });
         dialogFeedBinding.imgClose.setOnClickListener(v -> {
             dialog.dismiss();
@@ -331,6 +333,7 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnHo
     @Override
     public void onRegisterSaveActionListener(User user) {
         onBackPressed();
+        Snackbar.make(mActivityBinding.getRoot(), R.string.s_updates_success, Snackbar.LENGTH_INDEFINITE).setDuration(2000).show();
     }
 
     @Override

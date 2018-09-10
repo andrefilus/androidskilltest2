@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -124,6 +125,6 @@ public class LoginActivity extends AppCompatActivity implements RegisterFragment
         final FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.detach(mostTopFragment);
         mActivityBinding.fragmentContainer.setVisibility(View.GONE);
-//        FragmentUtils.clearFragmentManagerStack(getSupportFragmentManager());
+        Snackbar.make(mActivityBinding.getRoot(), R.string.s_updates_success, Snackbar.LENGTH_INDEFINITE).setDuration(2000).show();
     }
 }
