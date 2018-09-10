@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="AppTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/white_color</item>
+        <item name="colorControlNormal">@color/transparent</item>
+        <!--<item name="android:background">?attr/editTextBackground</item>-->
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="TranslucentAppTheme" parent="AppTheme" />
+
+</resources>

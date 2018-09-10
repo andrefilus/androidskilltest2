@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    android:id="@+id/wrapperErrorDialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:text="@string/s_problem_filling"
+        android:gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textAllCaps="true"
+            android:textColor="@color/fontColorTitle"
+            android:text="@string/s_continue"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"/>
+
+    </FrameLayout>
+
+</LinearLayout>
+</layout>

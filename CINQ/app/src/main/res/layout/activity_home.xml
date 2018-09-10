@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.HomeActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbarWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:titleMarginStart="70dp" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/txtTitleToolbar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingTop="10dp" />-->
+
+            <LinearLayout
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <ImageView
+                        android:id="@+id/imageSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_search" />
+
+                    <android.support.v7.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/completeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/buttonClose"
+                        android:layout_toRightOf="@+id/imageSearch"
+                        android:maxLength="50"
+                        android:background="@null"
+                        android:hint="@string/s_search_hint"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColorHint="#cccccc"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonClose"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/colorPrimary"
+                        android:src="@drawable/ic_close"
+                        android:tint="@color/white_color" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarWrapper"
+            android:layout_above="@+id/bottom_navigation_view"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/backgroundNavigationView"
+            app:itemIconTint="@drawable/selector_navigation_item"
+            app:itemTextColor="@drawable/selector_navigation_item"
+            app:menu="@menu/menu_home"/>
+
+        <View
+            android:id="@+id/backgroundDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_below="@id/toolbarWrapper" />
+
+
+    </RelativeLayout>
+</layout>

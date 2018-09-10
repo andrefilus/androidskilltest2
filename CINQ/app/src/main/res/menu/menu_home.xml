@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/actionHome" android:icon="@drawable/ic_home"
+        android:title="Home"  app:showAsAction="always" />
+
+    <item android:id="@+id/actionListAlbums" android:icon="@drawable/ic_photo_library_white_24dp"
+        android:title="Lista de álbuns"  app:showAsAction="always" />
+
+    <item android:id="@+id/actionAddUser" android:icon="@drawable/ic_person_add_white"
+        android:title="Adicionar usuário"  app:showAsAction="always" />
+
+</menu>

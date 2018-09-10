@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CINQ</string>
+
+    <!--Login-->
+    <string name="s_user">Usuário</string>
+    <string name="s_password">Senha</string>
+    <string name="s_login">Entrar</string>
+    <string name="s_ok">OK</string>
+    <string name="permission_storage_explanation">O Aplicativo da CINQ precisa de permissões para armazenar dados local. Aceite as permissões solicitadas, caso contrário, não será possível utilizar o aplicativo</string>
+    <string name="s_error_login">Login e/ou senha inválidos.</string>
+    <string name="without_permission_storage_explanation">Permissão de armazenamento não concedida, não será possível armazenar dados sem esta permissão.</string>
+
+    <!--Dialog-->
+    <string name="s_close">Fechar</string>
+    <string name="s_continue">Continuar</string>
+    <string name="s_problem_filling">Houve algum problema. Revise os campos em vermelho</string>
+    <string name="s_internal_server_error">Houve algum problema interno no servidor. Verifique o estado da sua conexão.</string>
+    <string name="s_atention">Atenção</string>
+
+    <!--Register-->
+    <string name="s_user_registration">Cadastro de usuário</string>
+    <string name="s_email">E-mail</string>
+    <string name="s_save">Salvar</string>
+    <string name="s_confirm_password">Confirme sua senha:</string>
+    <string name="s_txt_password">Informe sua senha de acesso:</string>
+    <string name="s_example_email">Ex.: filusandre@gmail.com</string>
+    <string name="s_txt_email">Informe seu e-mail de acesso:</string>
+    <string name="s_example_name">Ex.: André Henrique</string>
+    <string name="s_txt_name">Informe seu nome:</string>
+
+    <!--Home-->
+    <string name="s_no_result_on_search">Não há usuários cadastrados para pesquisar</string>
+    <string name="s_search_hint">Qual usuário você procura ?</string>
+    <string name="s_loading">Carregando</string>
+    <string name="s_albums">Álbuns</string>
+    <string name="s_welcome">Olá, %1$s</string>
+    <string name="s_invalid_user">Login e/ou senha inválidos</string>
+</resources>
